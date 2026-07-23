@@ -1,0 +1,21 @@
+# Build configuration for fylr-build-plugin — the explicit build description.
+# Delivered files are listed here; "check" (runs with every build) warns when
+# a manifest reference is missing from the build folder.
+# All features: https://github.com/programmfabrik/fylr-build-plugin
+
+server:
+  install:
+    - l10n
+
+webfrontend:
+  # CoffeeScript 1.x, compiled + concatenated in this order into
+  # plugin.webfrontend.url (webfrontend/fylr-plugin-detail-map.js)
+  coffee1:
+    - webfrontend/MapDetailPlugin.coffee
+  install:
+    - webfrontend/fylr-plugin-detail-map.css
+
+loca:
+  - csv: l10n/fylr-plugin-detail-map.csv
+    sheet: 1z9unV6L0lgD_KjJ6oxfSdx5B3llAbou0SqGz2sfXbBQ
+    gid: 0
