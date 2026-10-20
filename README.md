@@ -1,5 +1,7 @@
 # fylr-plugin-detail-map
 
+> **Warning:** this plugin is not maintained anymore. It is a port of the easydb 5 plugin, kept only so that the instances that already use it keep working. Use the [geo-json plugin](https://github.com/programmfabrik/fylr-plugin-geo-json-public) instead: its detail map also shows the files with GPS coordinates and the positions of "Location" fields, and it adds the GeoJSON editor, the search map and the geo search (the last two need `geo_support` in the license).
+
 A fylr plugin that shows the files of a record on a map in the detail view. Files with GPS coordinates in their technical metadata appear as markers at their capture location. Each marker shows a small preview of the file. A click on a marker opens the file in the asset browser. In fullscreen mode a click enlarges the preview instead. A double click centers the map on the marker.
 
 Other plugins can place additional markers on the map. The location and gazetteer custom data type plugins use this to show their positions.
